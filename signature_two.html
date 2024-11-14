@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .signature-container {
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            max-width: 450px;
+            width: 100%;
+            border-top: 2px solid #d9d9d9;
+            padding-top: 20px;
+            color: #333;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header img {
+            margin-left: 15px;
+            width: 80px;
+        }
+
+        .name {
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 4px;
+            color: #0066cc;
+        }
+
+        .role {
+            color: #666;
+            font-style: italic;
+            font-weight: lighter;
+            letter-spacing: 2.2px;
+        }
+
+        .contact-info,
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .contact-info div {
+            margin-bottom: 5px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 5px;
+            border-radius: 50%;
+            width: fit-content;
+            height: fit-content;
+            background-color: #a68d39;
+        }
+
+        .social-icons a:hover {
+            color: black;
+            background-color: rgb(172, 172, 172);
+        }
+
+        .profile-image {
+            width: 89px;
+            height: 89px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .banner {
+            margin-top: 20px;
+            position: relative;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 130px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .banner-text {
+            position: absolute;
+            letter-spacing: 2px;
+            top: 25%;
+            left: 52%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            width: 100%;
+            font-style: italic;
+            font-weight: 830;
+            color: #a68d39;
+        }
+
+        .banner-button {
+            position: absolute;
+            bottom: 20px;
+            left: 26%;
+            transform: translateX(-50%);
+            background-color: transparent;
+            border: 1px solid #a18529;
+            color: #a18529;
+            font-size: 12px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: lighter;
+        }
+
+        .banner-button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .confidentiality {
+            font-size: 12px;
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signature-container">
+        <!-- Name and Role -->
+        <div class="header">
+            <div>
+                <div class="name" style="color: #a68d39;">Waledxpert</div>
+                <div class="role" style="color: #a68d39;">Gym Assistant & Trainer</div>
+            </div>
+            <div style="display: flex; justify-self: self-start; justify-content: start; max-width: 165px; width: 100%;">
+                <img src="./muscle.gif" alt="Virtual Assistant icon" class="" />
+            </div>
+        </div>
+
+        <!-- Profile Image and Contact Information -->
+        <div style="display: flex; margin-top: 15px; justify-content: space-between;">
+            <div style="padding-right: 30px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div style="font-size: 14px; color: #666;">
+                    <div><strong>T:</strong> (800) 555-0299</div>
+                    <div><strong>M:</strong> (800) 555-0199</div>
+                    <div>
+                        <strong>E:</strong>
+                        <a href="mailto:waledxpert@gmail.com">john.doe@my-company.com</a>
+                    </div>
+                </div>
+                <!-- Social Icons -->
+                <div class="info-section social-icons" style="margin-top: 15px">
+                    <a href="https://linkdln.com/waledxpert" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/waledxpert" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/waledxpert" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com/waledxpert" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://youtube.com/muh_wale" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+
+            </div>
+            <div style="border-left: 2px solid #a68d39; padding-left: 15px; display: flex; flex-direction: column; justify-content: space-between;"
+                class="company">
+                <div style="font-size: 14px; color: #666;">
+                    <div><strong style="color: #a68d39;">My Company</strong></div>
+                    <div>Adedosu Street,Lagos</div>
+                    <div>102334, Nigeria</div>
+                </div>
+                <div class="company-site" style="margin-top: 15px; font-size: 14px; color: #a68d39; cursor: pointer;">
+                    <p>www.mycompany.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner with Button -->
+        <div class="banner">
+            <img src="./man.jpg" alt="Virtual Assistant Banner" class="" />
+            <div class="banner-text">GO BOLDER</div>
+            <a href="https://learn-more-link.com" class="banner-button">BOOK A TRAINING WITH ME</a>
+        </div>
+    </div>
+</body>
+
+</html>
